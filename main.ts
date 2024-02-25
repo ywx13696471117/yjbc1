@@ -34,6 +34,9 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Square)
     basic.showString("Happy Nwe Year!")
 })
+input.onButtonPressed(Button.AB, function () {
+    pins.servoWritePin(AnalogPin.P0, 0)
+})
 input.onButtonPressed(Button.B, function () {
     music.setVolume(255)
     basic.showLeds(`
